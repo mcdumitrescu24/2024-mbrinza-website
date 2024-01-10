@@ -1,0 +1,106 @@
+/* Mobile Styles (applies to all screens) */
+body {
+    font-size: 16px;
+    /* Other mobile styles go here */
+}
+
+/* Tablet Portrait Styles (601px - 768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        font-size: 18px;
+        /* Additional tablet portrait styles go here */
+    }
+}
+
+/* Tablet Landscape Styles (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+        /* Additional tablet landscape styles go here */
+    }
+}
+
+/* Desktop Styles (1025px and above) */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 22px;
+        /* Additional desktop styles go here */
+    }
+}
+
+
+
+/* Tablet Portrait Styles (601px - 768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        font-size: 18px;
+        /* Additional tablet portrait styles go here */
+    }
+}
+
+/* Tablet Landscape Styles (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+        /* Additional tablet landscape styles go here */
+    }
+}
+
+/* Desktop Styles (1025px and above) */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 22px;
+        /* Additional desktop styles go here */
+    }
+}
+
+/*---*/
+/* Mobile Styles (applies to all screens) */
+body {
+    font-size: 3rem; /* Base font size for mobile */
+    line-height: 1.5; /* Adjust line height as needed */
+    /* Other mobile styles go here */
+}
+
+h1 {
+    font-size: 2rem; /* Heading font size relative to the base font size */
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 2rem; /* Normal paragraph font size */
+    line-height: 1.5; /* Adjust line height for normal paragraphs */
+}
+
+/* Smaller font size for captions */
+.caption {
+    font-size: 0.8rem;
+}
+
+/* Tablet Portrait Styles (601px - 768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        font-size: 1.125rem; /* Increase base font size for tablets in portrait mode */
+    }
+}
+
+/* Tablet Landscape Styles (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 1.25rem; /* Increase base font size for tablets in landscape mode */
+    }
+}
+
+/* Desktop Styles (1025px and above) */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 1.375rem; /* Increase base font size for desktop */
+    }
+}

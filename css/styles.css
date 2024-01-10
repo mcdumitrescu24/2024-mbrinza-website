@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.outer-wrapper {
+    border: 1px solid red;
+    background-color: bisque;
+    height: 100vh;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+/* Mobile Styles (applies to all screens) */
+body {
+    font-size: 16px;
+    /* Other mobile styles go here */
+}
+
+/* Tablet Portrait Styles (601px - 768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        font-size: 18px;
+        /* Additional tablet portrait styles go here */
+    }
+}
+
+/* Tablet Landscape Styles (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+        /* Additional tablet landscape styles go here */
+    }
+}
+
+/* Desktop Styles (1025px and above) */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 22px;
+        /* Additional desktop styles go here */
+    }
+}
+
+
+
+/* Tablet Portrait Styles (601px - 768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        font-size: 18px;
+        /* Additional tablet portrait styles go here */
+    }
+}
+
+/* Tablet Landscape Styles (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+        /* Additional tablet landscape styles go here */
+    }
+}
+
+/* Desktop Styles (1025px and above) */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 22px;
+        /* Additional desktop styles go here */
+    }
+}
