@@ -1,67 +1,82 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;800&display=swap'); */
+
+
+:root {
+    --black: #000000;
+    --bg: #F9F5EB;
+    --orange: #FFC567;
+    --green: #55BB98;
+    --red: #FF8267;
+}
+
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 16px 16px 16px;
+    font-size: 16px;
+    background-color: var(--bg);
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+    font-weight:bold;
+    font-size: 96px;
+}
+p {
+    font-weight: 400;
+    font-size: 24px;
 }
 .outer-wrapper {
-    border: 1px solid red;
-    background-color: bisque;
-    height: 100vh;
+    border: 2px solid black;
     max-width: 1120px;
     margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.inner-wrapper {
     padding: 0 16px;
 }
-/* Mobile Styles (applies to all screens) */
-body {
-    font-size: 16px;
-    /* Other mobile styles go here */
+
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 8px 16px;
+    align-items: center;
 }
 
-/* Tablet Portrait Styles (601px - 768px) */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-    body {
-        font-size: 18px;
-        /* Additional tablet portrait styles go here */
-    }
+.logo h1{
+    font-size: 24px;
+    border-bottom: 3px solid var(--orange);
 }
 
-/* Tablet Landscape Styles (769px - 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    body {
-        font-size: 20px;
-        /* Additional tablet landscape styles go here */
-    }
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    margin: 0 24px;
 }
 
-/* Desktop Styles (1025px and above) */
-@media screen and (min-width: 1025px) {
-    body {
-        font-size: 22px;
-        /* Additional desktop styles go here */
-    }
+.nav-link {
+    text-decoration: none;
 }
 
-
-
-/* Tablet Portrait Styles (601px - 768px) */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-    body {
-        font-size: 18px;
-        /* Additional tablet portrait styles go here */
-    }
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Tablet Landscape Styles (769px - 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    body {
-        font-size: 20px;
-        /* Additional tablet landscape styles go here */
-    }
-}
-
-/* Desktop Styles (1025px and above) */
-@media screen and (min-width: 1025px) {
-    body {
-        font-size: 22px;
-        /* Additional desktop styles go here */
-    }
-}
+/* =================================================== */
