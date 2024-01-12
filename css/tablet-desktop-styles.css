@@ -1,0 +1,80 @@
+@media screen and (min-width: 360px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 44px;
+        margin-bottom: 130px;
+    }
+}
+@media screen and (min-width: 650px) {
+    body {
+        font-size: var(--fs-desktop);
+    }
+    .nav, .hero {
+        padding: var(--desktop-padding);
+    }
+    .experience, .skills, footer, .copyright {
+        padding: 0 var(--desktop-padding);
+        margin-bottom: 130px;
+    }
+    .hero {
+        margin-top: 40px;
+    }
+    .hero-row1 {
+        margin-bottom: 40px
+    }
+    .hero-img img{
+        width: 250px;
+    }
+    h1 {
+        font-size: 88px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .hero-img img{
+        width: 350px;
+    }
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 80px;
+        margin-bottom: 136px;
+    }
+    .cards-container {
+        gap: 100px;
+    }
+    .card {
+        margin:0;
+    }
+    .card-row1 {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+    .card-row2 {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1009px) {
+
+    .outer-wrapper {
+        margin: 0 auto;
+    }
+    .hero-row1 {
+        gap: 40px;
+    }
+    .hero-img img{
+        width: 350px;
+    }
+    h1 {
+        font-size: 120px;
+    }
+}
