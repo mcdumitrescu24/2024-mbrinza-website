@@ -11,13 +11,14 @@
     --orange: hsl(37.1, 100%, 70.2%);
     --green: hsl(159.4, 42.9%, 53.3%);
     --red: hsl(10.7, 100%, 70.2%);
-    --inner-padding: 0 32px;
-    --mobile-font-size: 20px;
-    --desktop-font-size: 24px;
     --2px-black-border: 2px solid var(--black);
     --10px-box-shadow: 10px 10px 0 0 #000;
     --mobile-padding: 16px;
+    --desktop-padding: 32px;
     --card-bg: hsl(0, 0%, 100%);
+    --inner-padding: 0 32px;
+    --fs-desktop: 24px;
+    --fs-mobile: 20px;
     --fs-h1: 32px;
     --fs-h2: 36px;
     --fs-sm: 16px;
@@ -27,7 +28,7 @@ body {
     margin: 0;
     background-color: var(--body-bg);
     font-family: "Darker Grotesque", sans-serif;
-    font-size: var(--mobile-font-size);
+    font-size: var(--fs-mobile);
     font-weight: 500;
 }
 
@@ -135,6 +136,8 @@ h2 {
     box-sizing: border-box;
     box-shadow: var(--10px-box-shadow);
     border-radius: 4px;
+    max-width: 660px;
+    margin: 0 auto;
 }
 
 .row1 {
