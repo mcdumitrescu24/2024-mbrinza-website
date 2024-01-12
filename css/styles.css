@@ -119,6 +119,7 @@ h2 {
     text-align: center;
     margin: 70px 0;
     font-size: var(--fs-h2);
+    text-transform: capitalize;
 }
 
 .cards-container {
