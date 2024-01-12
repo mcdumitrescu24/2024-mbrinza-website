@@ -18,6 +18,9 @@
     --10px-box-shadow: 10px 10px 0 0 #000;
     --mobile-padding: 16px;
     --card-bg: hsl(0, 0%, 100%);
+    --fs-h1: 32px;
+    --fs-h2: 36px;
+    --fs-sm: 16px;
 }
 
 body {
@@ -82,7 +85,7 @@ nav, .hamburger {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: var(--fs-h1);
 }
 
 .hero-row1 {
@@ -114,7 +117,7 @@ h1 {
 h2 {
     text-align: center;
     margin: 70px 0;
-    font-size: 36px;
+    font-size: var(--fs-h2);
 }
 
 .cards-container {
@@ -195,7 +198,7 @@ h2 {
 }
 
 .pill span {
-    font-size: 16px;
+    font-size: var(--fs-sm);
 }
 
 /* contact */
@@ -224,10 +227,11 @@ footer img {
 
 .copyright {
     padding: var(--mobile-padding);
-    font-size: 16px;
+    font-size: var(--fs-sm);
     border-top: var(--2px-black-border)
 }
 
 .copyright p {
     margin: 0;
 }
+
