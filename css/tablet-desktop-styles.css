@@ -90,8 +90,13 @@
     h1 {
         font-size: 120px;
     }
+    .experience {
+        background-image: url("../assets/steps3.png");
+        background-repeat: no-repeat;
+        background-position: bottom 256px right 276px;
+    }
     .cards-container {
-        gap: 200px;
+        gap: 150px;
     }
     .pill-container {
         padding: 0 152px 0 142px;
