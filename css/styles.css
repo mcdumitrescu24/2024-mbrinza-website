@@ -120,12 +120,13 @@ h2 {
     margin: 70px 0;
     font-size: var(--fs-h2);
     text-transform: capitalize;
+    position: relative;
 }
 
 .cards-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 }
 
 .card {
@@ -138,6 +139,7 @@ h2 {
     box-shadow: var(--10px-box-shadow);
     border-radius: 4px;
     max-width: 660px;
+    /* 572*/
     margin: 0 auto;
 }
 
@@ -176,13 +178,18 @@ h2 {
 /* skills */
 .skills {
     padding: var(--mobile-padding)
-
 }
 
 .pill-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
+}
+
+.pill-row-1, .pill-row-2, .pill-row-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .pill {
@@ -232,10 +239,19 @@ footer img {
 .copyright {
     padding: var(--mobile-padding);
     font-size: var(--fs-sm);
-    border-top: var(--2px-black-border)
+    border-top: var(--2px-black-border);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .copyright p {
     margin: 0;
 }
-
+.underline-decoration {
+    position: absolute;
+    top: 85%;
+    width: 270px;
+    border: 4px solid var(--orange);
+    left: 37%;
+}
