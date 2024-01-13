@@ -121,6 +121,10 @@ h2 {
     font-size: var(--fs-h2);
     text-transform: capitalize;
     position: relative;
+    background-image: url("../assets/line.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 25px;
 }
 
 .cards-container {
@@ -138,7 +142,7 @@ h2 {
     box-sizing: border-box;
     box-shadow: var(--10px-box-shadow);
     border-radius: 4px;
-    max-width: 660px;
+    max-width: 572px;
     /* 572*/
     margin: 0 auto;
 }
@@ -215,6 +219,7 @@ h2 {
 /* contact */
 footer {
     margin-bottom: 50px;
+    padding: var(--mobile-padding);
 }
 
 footer ul {
@@ -247,11 +252,4 @@ footer img {
 
 .copyright p {
     margin: 0;
-}
-.underline-decoration {
-    position: absolute;
-    top: 85%;
-    width: 270px;
-    border: 4px solid var(--orange);
-    left: 37%;
 }
