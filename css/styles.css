@@ -64,9 +64,13 @@ html {
     border: var(--2px-black-border);
     padding: 5px 20px 10px 20px;
     border-radius: 4px;
-    box-shadow: 7px 7px 0 0 #000;
     background-color: var(--orange);
     color: white;
+    transition: all 0.4s ease-out;
+}
+.cta:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 4px 4px 0 0 #000;
 }
 
 .cta a {
@@ -82,7 +86,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 0 var(--mobile-padding);
-    margin-top: 20px;
+    margin-top: 56px;
 }
 
 h1 {
@@ -106,8 +110,12 @@ h1 {
     flex-direction: column;
 }
 
+.hero-row2 p:last-child {
+    margin-top: 12px;
+}
 .hero-row2 p {
-    margin: 10px 0;
+    margin: 0;
+    width: 56%;
 }
 
 /* experience */
