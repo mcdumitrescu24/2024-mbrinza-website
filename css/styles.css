@@ -54,7 +54,7 @@ html {
     font-weight: bold;
 }
 
-.underline {
+.logo-underline {
     border-top: 4px solid var(--orange);
     position: relative;
     bottom: 5px;
@@ -74,7 +74,7 @@ html {
     font-weight: bold;
 }
 
-nav, .hamburger {
+nav {
     display: none;
 }
 
@@ -224,16 +224,22 @@ footer {
 
 footer ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
-    padding: var(--mobile-padding);
+    padding: 0;
     gap: 40px;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 footer ul li {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li p {
+    margin: 0;
 }
 
 footer img {
