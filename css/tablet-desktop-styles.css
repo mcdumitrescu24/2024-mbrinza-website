@@ -39,6 +39,29 @@
     .hero-img img{
         width: 350px;
     }
+    nav {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        gap: 40px;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+    nav a {
+        color: var(--black);
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
+
+    nav a:hover {
+        border-bottom: 4px solid var(--orange);
+    }
+
     h1 {
         font-size: 100px;
     }
