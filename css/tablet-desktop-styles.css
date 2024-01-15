@@ -24,10 +24,7 @@
     .hero {
         margin-top: 40px;
     }
-    .hero-row1 {
-        margin-bottom: 60px
-    }
-    .hero-img img{
+    .right-col img{
         width: 250px;
     }
     h1 {
@@ -39,7 +36,7 @@
 }
 
 @media screen and (min-width: 840px) {
-    .hero-img img{
+    .right-col img{
         width: 350px;
     }
     nav {
@@ -125,10 +122,7 @@
     .outer-wrapper {
         margin: 0 auto;
     }
-    .hero-row1 {
-        gap: 40px;
-    }
-    .hero-img img{
+    .right-col img{
         width: 350px;
     }
     h1 {
