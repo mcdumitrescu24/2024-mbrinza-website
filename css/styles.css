@@ -19,7 +19,7 @@
     --inner-padding: 0 32px;
     --fs-desktop: 24px;
     --fs-mobile: 20px;
-    --fs-h1: 32px;
+    --fs-h1: 40px;
     --fs-h2: 36px;
     --fs-sm: 16px;
 }
@@ -42,6 +42,9 @@ html {
     border: var(--2px-black-border);
 }
 
+.min-height {
+    min-height: 100vh;
+}
 .nav {
     border-bottom: var(--2px-black-border);
     padding: var(--mobile-padding);
@@ -86,36 +89,29 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 0 var(--mobile-padding);
-    margin-top: 56px;
+    margin-top: 70px;
 }
 
 h1 {
     font-size: var(--fs-h1);
+    margin: 0;
 }
-
 .hero-row1 {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
 }
-
-.hero-img img {
-    aspect-ratio: auto;
-    width: 150px;
-}
-
 .hero-row2 {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 50px;
 }
-
-.hero-row2 p:last-child {
-    margin-top: 12px;
+.hero-row3 p:first-child {
+    margin-bottom: 50px;
 }
-.hero-row2 p {
-    margin: 0;
-    width: 56%;
+.hero img {
+    aspect-ratio: auto;
+    width: 200px;
 }
 
 /* experience */
@@ -177,7 +173,7 @@ h2 {
 .location {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/
     justify-content: flex-end;
 }
 
