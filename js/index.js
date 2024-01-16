@@ -77,7 +77,7 @@ function handleIntersection(entries, observer) {
 const observer = new IntersectionObserver(handleIntersection, {
   root: null, // Use the viewport as the root
   rootMargin: '0px', // No margin
-  threshold: 0.5, // Trigger when X% of the element is visible
+  threshold: 0.7, // Trigger when X% of the element is visible
 });
 
 const cards = document.querySelectorAll('.card1, .card2, .card3');
