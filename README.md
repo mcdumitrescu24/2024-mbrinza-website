@@ -1,1 +1,1 @@
-readme
+this repo contains the code for what will hopefully soon be my website.
