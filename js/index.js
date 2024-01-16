@@ -29,7 +29,7 @@ const annotationConfig = {
   strokeWidth: 2,
   padding: [1],
   multiline: true,
-  iterations: 1,
+  iterations: 2,
   brackets: ['right', 'top', 'bottom', 'left'],
   rtl: false
 }
