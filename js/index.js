@@ -36,14 +36,10 @@ const annotationConfig = {
 
 function applyAnnotationEffect(effects, colors, elements) {
   elements.forEach((el, index) => {
-    const parent = el.parentElement;
-    const containsSvg = parent.querySelector('svg');
-    if(!containsSvg) {
       annotationConfig.type = effects[index];
       annotationConfig.color = colors[index];
       const effect = annotate(el, annotationConfig);
       effect.show();
-    }
   });
 }
 
@@ -55,7 +51,6 @@ setTimeout(()=> applyAnnotationEffect(headerEffects, headerColors, headerElement
 const timeoutDuration = 1200;
 
 // scroll animation
-let draw = true;
 function handleIntersection(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
