@@ -24,49 +24,56 @@ const colors = {
 const annotationConfig = {
   type: effects.bracket,
   animate: true,
-  animationDuration: 2000,
+  animationDuration: 1000,
   color: colors.green,
   strokeWidth: 2,
   padding: [1],
   multiline: true,
-  iterations: 3,
+  iterations: 1,
   brackets: ['right', 'top', 'bottom', 'left'],
   rtl: false
 }
 
 function applyAnnotationEffect(effects, colors, elements) {
   elements.forEach((el, index) => {
-    annotationConfig.type = effects[index];
-    annotationConfig.color = colors[index];
-    const effect = annotate(el, annotationConfig);
-    effect.show();
+    const parent = el.parentElement;
+    const containsSvg = parent.querySelector('svg');
+    if(!containsSvg) {
+      annotationConfig.type = effects[index];
+      annotationConfig.color = colors[index];
+      const effect = annotate(el, annotationConfig);
+      effect.show();
+    }
   });
 }
 
 const headerEffects = [effects.underline, effects.box];
 const headerColors = [colors.green, colors.orange];
 const headerElements = [exp, ux];
-setTimeout(()=> applyAnnotationEffect(headerEffects, headerColors, headerElements), 400);
+setTimeout(()=> applyAnnotationEffect(headerEffects, headerColors, headerElements), 700);
 
-
-const cardEffects = [effects.box, effects.box, effects.underline];
-const cardColors = [colors.green, colors.orange, colors.red];
-const cardElements = [endava, alten, drx];
+const timeoutDuration = 1200;
 
 // scroll animation
+let draw = true;
 function handleIntersection(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      if (entry.target.classList.contains('card1') || entry.target.classList.contains('card3')) {
+      if (entry.target.classList.contains('card1')){
         entry.target.classList.add('show');
         entry.target.classList.add('slide-in-right');
-      } else {
+        setTimeout(() => applyAnnotationEffect([effects.box], [colors.green], [endava]), timeoutDuration);
+      }
+      else if (entry.target.classList.contains('card3')){
+        entry.target.classList.add('show');
+        entry.target.classList.add('slide-in-right');
+        setTimeout(() => applyAnnotationEffect([effects.box], [colors.red], [drx]), timeoutDuration);
+      }
+      else {
         entry.target.classList.add('show');
         entry.target.classList.add('slide-in-left');
+        setTimeout(() => applyAnnotationEffect([effects.box], [colors.orange], [alten]), timeoutDuration);
       }
-
-      setTimeout(() => applyAnnotationEffect(cardEffects, cardColors, cardElements), 1000);
-
       observer.unobserve(entry.target);
     }
   });
@@ -75,7 +82,7 @@ function handleIntersection(entries, observer) {
 const observer = new IntersectionObserver(handleIntersection, {
   root: null, // Use the viewport as the root
   rootMargin: '0px', // No margin
-  threshold: 0.8, // Trigger when X% of the element is visible
+  threshold: 0.5, // Trigger when X% of the element is visible
 });
 
 const cards = document.querySelectorAll('.card1, .card2, .card3');
