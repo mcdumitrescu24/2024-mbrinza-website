@@ -152,7 +152,6 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "heading img";
-        grid-row-gap: 50px;
     }
     .item-1 {
         grid-area: heading;
@@ -165,9 +164,10 @@
         grid-area: heading;
         align-self: center;
         margin-top: 140px;
+        padding-right: 10px;
     }
     h1 {
-        font-size: 88px;
+        font-size: 81px;
     }
     .item-2 img{
         width: 350px;
@@ -184,5 +184,12 @@
     .pill-container {
         padding: 0 152px 0 142px;
         gap: 70px;
+    }
+}
+
+
+@media screen and (min-width: 1082px) {
+    h1 {
+        font-size: 88px;
     }
 }
