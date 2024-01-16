@@ -24,7 +24,7 @@ const colors = {
 const annotationConfig = {
   type: effects.bracket,
   animate: true,
-  animationDuration: 1000,
+  animationDuration: 1500,
   color: colors.green,
   strokeWidth: 2,
   padding: [1],
