@@ -1,5 +1,4 @@
 const annotate = window.RoughNotation.annotate;
-
 const exp = document.querySelector('.exp');
 const ux = document.querySelector('.ux');
 const endava = document.querySelector('.endava');
@@ -77,7 +76,7 @@ function handleIntersection(entries, observer) {
 const observer = new IntersectionObserver(handleIntersection, {
   root: null, // Use the viewport as the root
   rootMargin: '0px', // No margin
-  threshold: 0.7, // Trigger when X% of the element is visible
+  threshold: 0.2, // Trigger when X% of the element is visible
 });
 
 const cards = document.querySelectorAll('.card1, .card2, .card3');
